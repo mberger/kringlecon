@@ -1,5 +1,7 @@
 ### This challenge is to uploac the elf's report.txt to the samba share at //localhost/report-upload
 
+[Video](https://www.youtube.com/watch?v=W6_JaApK0xM)
+
 Here's the firt screen... lets go
 ```
 kkkkkkkkkkkkkOKXXXXXXXkxddo;,,,,,,,,,,,,,,,,,,,,,,,,cddxkXXXXXXXkc,,,,,,,,,,,,,
@@ -53,3 +55,27 @@ Complete this challenge by uploading the elf's report.txt
 file to the samba share at //localhost/report-upload/
 elf@38fa2dd7ebbc:~$
 ```
+The report is a simple text file
+```
+Stall mucking report
+
+Dasher - routine
+Dancer - routine
+Prancer - confiscated second salt lick
+Vixen - minor repair/adjustment to water system
+Comet - routine
+Cupid - routine
+Donner - routine
+Blitzen - refilled headache medicine
+Thrasher - routine
+Thunder - requested hay! oats! hay! oats!
+Blaster - stall... took extra mucking
+Blunder - caught with excessive carrot contraband again
+Blogger - discussed social media policies again
+Bragger - what appeared to be a prosthetic red nose
+Wed Dec 19 16:11:48 UTC 2018
+```
+
+Typical samba put command 
+``` smbclient //server/share -c 'cd c:/remote/path ; put local-file' ```
+
