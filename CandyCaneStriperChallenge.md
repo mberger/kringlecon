@@ -2,7 +2,7 @@
 FIrst checked nginx.conf to see what's what. Nothing really important.
 
 Checked history
-elf@d6f7b47229a3:~$ more .bash_history 
+``elf@d6f7b47229a3:~$ more .bash_history 
 netstat -ant
 ncat --broker -nlvp 9090
 echo "\302\257\_(\343\203\204)_/\302\257" >> /tmp/shruggins
@@ -24,4 +24,4 @@ aptitude -vvvvvv moo
 yes Giddyup
 factor 512
 aafire
-elf@d6f7b47229a3:~$
+elf@d6f7b47229a3:~$``
