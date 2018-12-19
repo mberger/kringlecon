@@ -45,8 +45,10 @@ curl --http2-prior-knowledge http://localhost:8080/index.php
  ```
 So we neet to post to that abive URL with the status of on. list this
 ```
-elf@1d12148a9b29:~$ curl --http2-prior-knowledge http://localhost:8080/index.php --data stat
-us=on
+elf@1d12148a9b29:~$ curl --http2-prior-knowledge http://localhost:8080/index.php --data status=on
+```
+Gives us this output... SUCCESS!
+```
 <html>
  <head>
   <title>Candy Striper Turner-On'er</title>
