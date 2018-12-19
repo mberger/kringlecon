@@ -2,6 +2,8 @@ This Objective says to check the CPF site [Here](https://cfp.kringlecastle.com/c
 
 Basically I checked the page source and looked for anything interesting, not a whole lot there, but the directory structure is browsable, so remove cfp.html from the path and Bob's your Uncle.
 
+testing 
+
 <img src="https://screenshotscdn.firefoxusercontent.com/images/6f6256c9-2bff-46d7-91b0-8727e4688635.png">
 
 https://cfp.kringlecastle.com/cfp/rejected-talks.csv
