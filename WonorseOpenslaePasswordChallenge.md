@@ -76,6 +76,26 @@ Bragger - what appeared to be a prosthetic red nose
 Wed Dec 19 16:11:48 UTC 2018
 ```
 
+A ps gets us this:
+```
+PID TTY      STAT   TIME COMMAND
+    1 pts/0    Ss     0:00 /bin/bash /sbin/init
+   10 pts/0    S      0:00 sudo -u manager /home/manager/samba-wrapper.sh --verbosity=none --no-check-certificate --extraneous-command-argument --do-not-run-as-tyler --accept-sage-advice -a 42 -d~ --ignore-sw-holiday-special --suppress --suppress //localhost/report-upload/ directreindeerflatterystable -U report-upload
+   16 pts/0    S      0:00  \_ /bin/bash /home/manager/samba-wrapper.sh --verbosity=none --no-check-certificate --extraneous-command-argument --do-not-run-as-tyler --accept-sage-advice -a 42 -d~ --ignore-sw-holiday-special --suppress --suppress //localhost/report-upload/ directreindeerflatterystable -U report-upload
+   30 pts/0    S      0:00      \_ sleep 60
+   11 pts/0    S      0:00 sudo -E -u manager /usr/bin/python /home/manager/report-check.py
+   17 pts/0    S      0:00  \_ /usr/bin/python /home/manager/report-check.py
+   15 pts/0    S      0:00 sudo -u elf /bin/bash
+   18 pts/0    S      0:00  \_ /bin/bash
+   34 pts/0    R+     0:00      \_ ps afx
+   35 pts/0    S+     0:00      \_ less
+   23 ?        Ss     0:00 /usr/sbin/smbd
+   24 ?        S      0:00  \_ /usr/sbin/smbd
+   25 ?        S      0:00  \_ /usr/sbin/smbd
+   27 ?        S      0:00  \_ /usr/sbin/smbd
+   ```
+
+
 Typical samba put command 
 ``` smbclient //server/share -c 'cd c:/remote/path ; put local-file' ```
 
