@@ -139,3 +139,48 @@ rpcclient $> queryuser 1000
         logon_hrs[0..21]...
 rpcclient $> 
 ```
+
+``` 
+elf@b81aa31b8012:~$ smbclient -U report-upload //localhost/report-upload/
+WARNING: The "syslog" option is deprecated
+Enter report-upload's password: 
+Domain=[WORKGROUP] OS=[Windows 6.1] Server=[Samba 4.5.12-Debian]
+smb: \>  
+```
+Now we put the file up onto the Samba share and get the following SUCCESS!
+```
+smb: \> put report.txt report.txt 
+putting file report.txt as \report.txt (250.5 kb/s) (average 250.5 kb/s)
+smb: \> Terminated
+elf@b81aa31b8012:~$ 
+                                                                               
+                               .;;;;;;;;;;;;;;;'                               
+                             ,NWOkkkkkkkkkkkkkkNN;                             
+                           ..KM; Stall Mucking ,MN..                           
+                         OMNXNMd.             .oMWXXM0.                        
+                        ;MO   l0NNNNNNNNNNNNNNN0o   xMc                        
+                        :MO                         xMl             '.         
+                        :MO   dOOOOOOOOOOOOOOOOOd.  xMl             :l:.       
+ .cc::::::::;;;;;;;;;;;,oMO  .0NNNNNNNNNNNNNNNNN0.  xMd,,,,,,,,,,,,,clll:.     
+ 'kkkkxxxxxddddddoooooooxMO   ..'''''''''''.        xMkcccccccllllllllllooc.   
+ 'kkkkxxxxxddddddoooooooxMO  .MMMMMMMMMMMMMM,       xMkcccccccllllllllllooool  
+ 'kkkkxxxxxddddddoooooooxMO   '::::::::::::,        xMkcccccccllllllllllool,   
+ .ooooollllllccccccccc::dMO                         xMx;;;;;::::::::lllll'     
+                        :MO  .ONNNNNNNNXk           xMl             :lc'       
+                        :MO   dOOOOOOOOOo           xMl             ;.         
+                        :MO   'cccccccccccccc:'     xMl                        
+                        :MO  .WMMMMMMMMMMMMMMMW.    xMl                        
+                        :MO    ...............      xMl                        
+                        .NWxddddddddddddddddddddddddNW'                        
+                          ;ccccccccccccccccccccccccc;                          
+                                                                               
+
+
+
+You have found the credentials I just had forgot,
+And in doing so you've saved me trouble untold.
+Going forward we'll leave behind policies old,
+Building separate accounts for each elf in the lot.
+
+-Wunorse Openslae
+```

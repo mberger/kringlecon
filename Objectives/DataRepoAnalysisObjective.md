@@ -12,7 +12,15 @@ Run truffelhog on the repo
 In the output below we fint this password for a file called elf_eyes_only with the password below
 ```Password = 'Yippee-ki-yay' ```
 
-Checking the dir schematics I see the ventelation_diagram.zip - wonder if this is the encrypted file in the objective
+Checking the files for zip files we find the zip file
+Run find . -name "*.zip" to find ./schematics/ventilation_diagram.zip
+
+Try to open the zip file with the password `Yippee-ki-yay` and find the maps for the 
+[first](assets/ventilation_diagram_1F.jpg) 
+and 
+[second](assets/ventilation_diagram_2F.jpg) floor of the vents maze.
+
+Checking the dir schematics I see the ventelation_diagram.zip - wonder if this is the encrypted file in the objective - yup.
 
 #### All output of trufflehog
 ```
