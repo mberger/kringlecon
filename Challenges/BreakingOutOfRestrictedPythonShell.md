@@ -1,5 +1,4 @@
 ## Breaking out of a restricted python shell
-testing a change 
 
 [Python sinister secrets](https://gist.github.com/MarkBaggett/dd440362f8a443d644b913acadff9499)
 
