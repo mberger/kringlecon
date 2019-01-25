@@ -1,5 +1,4 @@
 # kringlecon
-Contest is closed
 
 My repo for HHC 2018 - Kringlecon
 
